@@ -217,6 +217,37 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+
+
+
+  
+.footer {
+    position: absolute;
+    bottom: 3%;
+    height: 80px;
+    line-height: 80px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .footer {
+    margin-bottom: 0px;
+    font-size: 0.8em;
+    line-height: 80px;
+    color: var(--color-negro);
+    letter-spacing: 0.5px;
+    font-weight: 300;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: var(--color-rosa);
+    font-weight: 600;
+  }
+
+
+
 /* ------------------------- */
 /* Sección General */
 /* ------------------------- */
@@ -419,6 +450,14 @@ h1, h2, h3, h4, h5, h6 {
         border-radius: 1.5em;
         margin: 0 0.5em;
     }
+    .footer {
+        bottom: 2%;
+      }
+      
+      .footer {
+        font-size: 0.6em;
+      }
+    
 }
 
 
