@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800');
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800");
 
 @font-face {
-  font-family: 'Glow Better Script';
+  font-family: "Glow Better Script";
   src: url("../fonts/BetterSignature.otf") format("opentype");
 }
 
 @font-face {
-font-family: 'Glow Better Serif';
-src: url("../fonts/GlowBetter.otf") format("opentype");
+  font-family: "Glow Better Serif";
+  src: url("../fonts/GlowBetter.otf") format("opentype");
 }
 
 /* ------------------------- */
@@ -15,11 +15,11 @@ src: url("../fonts/GlowBetter.otf") format("opentype");
 /* ------------------------- */
 
 :root {
-    --color-negro: #000000;
-    --color-blanco: #ffffff;
-    /* --color-rosa: #e73f8d; */
-    --color-rosa: #D85C65;
-    --color-gris: #cccccc;
+  --color-negro: #000000;
+  --color-blanco: #ffffff;
+  /* --color-rosa: #e73f8d; */
+  --color-rosa: #d85c65;
+  --color-gris: #cccccc;
 }
 
 /* ------------------------- */
@@ -27,158 +27,153 @@ src: url("../fonts/GlowBetter.otf") format("opentype");
 /* ------------------------- */
 
 * {
-    box-sizing: border-box;
-    margin: 0; 
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body { 
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    color: var(--color-negro);
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: var(--color-negro);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    text-align: center;
-    margin-bottom: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  margin-bottom: 0;
 }
 
 .fp-watermark {
-    display: none;
+  display: none;
 }
-
 
 /* ------------------------- */
 /* Menu de Navegación */
 /* ------------------------- */
 
 .nav {
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    z-index: 2;
-    width: 100%;
-    margin: 0;
-    padding: 10px 50px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 2;
+  width: 100%;
+  margin: 0;
+  padding: 10px 50px;
 }
 
 .nav li,
 .nav a {
-    display: inline-block;
-    margin: 10px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: var(--color-negro);
-    transition: .5s ease;
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--color-negro);
+  transition: 0.5s ease;
 }
 
 .nav li.active {
-    border-bottom: 2px solid var(--color-rosa);
+  border-bottom: 2px solid var(--color-rosa);
 }
 
 .menu li a {
-    transition: .5s;
-    margin: 0;
-    padding: 0;
+  transition: 0.5s;
+  margin: 0;
+  padding: 0;
 }
 
 .menu li.active a,
 .menu li:hover a {
-    color: var(--color-rosa);
+  color: var(--color-rosa);
 }
 
 /* ------------------------- */
 /* Inicio */
 /* ------------------------- */
 
-
 .inicio__h1 {
-    font-family:'Glow Better Serif';
-    font-size: 5em;
+  font-family: "Glow Better Serif";
+  font-size: 5em;
 }
 
 .inicio__h1__span {
-    font-family: 'Glow Better Script';
-    font-size: 0.8em;
-    margin-left: -0.5em;
-    color: var(--color-rosa);
+  font-family: "Glow Better Script";
+  font-size: 0.8em;
+  margin-left: -0.5em;
+  color: var(--color-rosa);
 }
 
 .inicio__h2 {
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    margin-top: -1.2em;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-top: -1.2em;
 }
 
-
-
 .countdown {
-    display: flex;
-    justify-content: center;
-    margin: 50px 0;
-    padding: 0;
-  }
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+  padding: 0;
+}
 
-  .countdown li {
-    color: var(--color-blanco);
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--color-rosa);
-    width: 100px;
-    height: 100px;
-    border-radius: 100px;
-    margin: 0 1em;
-  }
+.countdown li {
+  color: var(--color-blanco);
+  background-color: var(--color-rosa);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin: 0 1em;
+}
 
-  .countdown span {
-    font-size: 1.3em;
-  }
+.countdown span {
+  font-size: 1.3em;
+}
 
-  .countdown h3 {
-    font-size: 0.8em;
-    text-transform: uppercase;
-  }
-
-
-
+.countdown h3 {
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
 
 .inicio__contenedor__icono {
-    position: absolute;
-    z-index: 2;
-    bottom: 3%;
-    left: 49%;
-    font-size: 2.5em;
-    animation: bajar__subir 1s ease infinite;
+  position: absolute;
+  z-index: 2;
+  bottom: 3%;
+  left: 49%;
+  font-size: 2.5em;
+  animation: bajar__subir 1s ease infinite;
 }
 
 .inicio__contenedor__icono p a {
-    color: var(--color-rosa);
+  color: var(--color-rosa);
 }
 
 .inicio__contenedor__icono p a:hover {
-    color: var(--color-gris);
+  color: var(--color-gris);
 }
-
-
-
 
 /* ------------------------- */
 /* Nuestros Menus */
 /* ------------------------- */
 
 .nuestras__comidas__img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nuestras__comidas__img img {
-    height: 500px;
+  height: 500px;
 }
 
 /* ------------------------- */
@@ -186,91 +181,82 @@ h1, h2, h3, h4, h5, h6 {
 /* ------------------------- */
 
 .redes__sociales h3 {
-    transition: 0.3 ease all;
+  transition: 0.3 ease all;
 }
 
 .redes__sociales p {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    font-size: 3em;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  font-size: 3em;
 }
 
 .redes__sociales p a {
-    display: flex;
-    width: 2em;
-    height: 2em;
-    background: var(--color-rosa);
-    color: var(--color-blanco);
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
-    border-radius: 2em;
-    margin: 0 1em;
+  display: flex;
+  width: 2em;
+  height: 2em;
+  background: var(--color-rosa);
+  color: var(--color-blanco);
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2em;
+  margin: 0 1em;
 }
 
 .redes__sociales p a:hover {
-    background: var(--color-blanco);
-    color: var(--color-rosa);
-    border: 0.1em solid var(--color-rosa);
+  background: var(--color-blanco);
+  color: var(--color-rosa);
+  border: 0.1em solid var(--color-rosa);
 }
 
-
-
-
-
-
-  
 .footer {
-    position: absolute;
-    bottom: 3%;
-    height: 80px;
-    line-height: 80px;
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-  }
-  
-  .footer {
-    margin-bottom: 0px;
-    font-size: 0.8em;
-    line-height: 80px;
-    color: var(--color-negro);
-    letter-spacing: 0.5px;
-    font-weight: 300;
-  }
-  
-  .footer a {
-    text-decoration: none;
-    color: var(--color-rosa);
-    font-weight: 600;
-  }
+  position: absolute;
+  bottom: 3%;
+  height: 80px;
+  line-height: 80px;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
 
+.footer {
+  margin-bottom: 0px;
+  font-size: 0.8em;
+  line-height: 80px;
+  color: var(--color-negro);
+  letter-spacing: 0.5px;
+  font-weight: 300;
+}
 
+.footer a {
+  text-decoration: none;
+  color: var(--color-rosa);
+  font-weight: 600;
+}
 
 /* ------------------------- */
 /* Sección General */
 /* ------------------------- */
 
 .section {
-    background-image: url(../media/bg-imagen-1920.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+  background-image: url(../media/bg-imagen-1920.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-
 .section__h3 {
-    font-family:'Glow Better Serif';
-    font-size: 5em;
+  font-family: "Glow Better Serif";
+  font-size: 5em;
 }
 
 .section__h3__span {
-    font-family: 'Glow Better Script';
-    font-size: 0.8em;
-    margin-left: -0.5em;
-    color: var(--color-rosa);
+  font-family: "Glow Better Script";
+  font-size: 0.8em;
+  margin-left: -0.5em;
+  color: var(--color-rosa);
 }
 
 /* ------------------------- */
@@ -278,11 +264,11 @@ h1, h2, h3, h4, h5, h6 {
 /* ------------------------- */
 
 #fp-nav ul li a span {
-    background-color: var(--color-rosa);
+  background-color: var(--color-rosa);
 }
 
 #fp-nav ul li .fp-tooltip {
-    color: var(--color-rosa);
+  color: var(--color-rosa);
 }
 
 /* ------------------------- */
@@ -290,50 +276,52 @@ h1, h2, h3, h4, h5, h6 {
 /* ------------------------- */
 
 @keyframes bajar__subir {
-    0% {transform: translateY(1em);}
-        25% {transform: translateY(0em);}
-            100% {transform: translateY(1em);}
-
-
+  0% {
+    transform: translateY(1em);
+  }
+  25% {
+    transform: translateY(0em);
+  }
+  100% {
+    transform: translateY(1em);
+  }
 }
 
-
-
 @media only screen and (max-width: 1023px) {
-    .nav li,
-    .nav a {
-        margin: 5px;
-        font-size: 0.95em;
-    }
+  .nav li,
+  .nav a {
+    margin: 5px;
+    font-size: 0.95em;
+  }
 
-    .section {
-        background-image: url(../media/bg-imagen-1024.png);
-    }
-    .section__h3 {
-        font-family:'Glow Better Serif';
-        font-size: 3em;
-    }
-    .section__h3__span {
-        font-family: 'Glow Better Script';
-        font-size: 0.8em;
-        margin-left: -0.5em;
-        color: var(--color-rosa);
-    }
+  .section {
+    background-image: url(../media/bg-imagen-1024.png);
+  }
+  .section__h3 {
+    font-family: "Glow Better Serif";
+    font-size: 3em;
+  }
+  .section__h3__span {
+    font-family: "Glow Better Script";
+    font-size: 0.8em;
+    margin-left: -0.5em;
+    color: var(--color-rosa);
+  }
 
-    .inicio__h1 {
-        font-size: 3em;
-    }
-    .inicio__h1__span {
-        font-size: 0.8em;
-        margin-left: -0.5em;
-    }
-    .inicio__h2 {
-        font-size: 0.8em;
-        margin-top: -1.2em;
-    }
+  .inicio__h1 {
+    font-size: 3em;
+  }
+  .inicio__h1__span {
+    font-size: 0.8em;
+    margin-left: -0.5em;
+  }
+  .inicio__h2 {
+    font-size: 0.8em;
+    margin-top: -1.2em;
+  }
 
-    .countdown {
-        margin: 50px 0;
+  .countdown {
+    margin: 50px 0;
   }
 
   .countdown li {
@@ -352,66 +340,66 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
   }
 
+  .inicio__contenedor__icono {
+    bottom: 3%;
+    left: 46%;
+    font-size: 2em;
+  }
 
-    .inicio__contenedor__icono {
-        bottom: 3%;
-        left: 46%;
-        font-size: 2em;
-    }
+  .redes__sociales p {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font-size: 2em;
+  }
 
-    .redes__sociales p {
-        display: flex;
-        justify-content: center;
-        margin: 0;
-        font-size: 2em;
-    }
-
-    .redes__sociales p a {
-        width: 2em;
-        height: 2em;
-        border-radius: 2em;
-        margin: 0 0.5em;
-    }
+  .redes__sociales p a {
+    width: 2em;
+    height: 2em;
+    border-radius: 2em;
+    margin: 0 0.5em;
+  }
 }
 
 @media only screen and (max-width: 720px) {
-    .nav a img {
-        display: none;
-    }
-    .nav li,
-    .nav a {
-        margin: 50px 1px 10px 1px;
-        font-size: 0.75em;
-    }
+  .nav a img,
+  .nav>a {
+    display: none;
+  }
+  .nav li,
+  .nav a {
+    margin: 50px 1px 10px 1px;
+    font-size: 0.85em;
+  }
 
-    .section {
-        background-image: url(../media/bg-imagen-720.png);
-    }
-    .section__h3 {
-        font-family:'Glow Better Serif';
-        font-size: 2em;
-    }
-    .section__h3__span {
-        font-family: 'Glow Better Script';
-        font-size: 0.8em;
-        margin-left: -0.5em;
-        color: var(--color-rosa);
-    }
+  .section {
+    background-image: url(../media/bg-imagen-720.png);
+  }
+  .section__h3 {
+    font-family: "Glow Better Serif";
+    font-size: 2em;
+  }
+  .section__h3__span {
+    font-family: "Glow Better Script";
+    font-size: 0.8em;
+    margin-left: -0.5em;
+    color: var(--color-rosa);
+  }
 
-    .inicio__h1 {
-        font-size: 2em;
-    }
-    .inicio__h1__span {
-        font-size: 0.8em;
-        margin-left: -0.5em;
-    }
-    .inicio__h2 {
-        font-size: 0.55em;
-        margin-top: -1.2em;
-    }
+  .inicio__h1 {
+    font-size: 2em;
+  }
+  .inicio__h1__span {
+    font-size: 0.8em;
+    margin-left: -0.5em;
+  }
+  .inicio__h2 {
+    font-size: 0.55em;
+    margin-top: -1.2em;
+  }
 
-   .countdown {
-        margin: 50px 0;
+  .countdown {
+    margin: 50px 0;
   }
 
   .countdown li {
@@ -430,71 +418,67 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
   }
 
+  .inicio__contenedor__icono {
+    bottom: 3%;
+    left: 46%;
+    font-size: 2em;
+  }
 
-    .inicio__contenedor__icono {
-        bottom: 3%;
-        left: 46%;
-        font-size: 2em;
-    }
+  .redes__sociales p {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font-size: 1.5em;
+  }
 
-    .redes__sociales p {
-        display: flex;
-        justify-content: center;
-        margin: 0;
-        font-size: 1.5em;
-    }
+  .redes__sociales p a {
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 1.5em;
+    margin: 0 0.5em;
+  }
+  .footer {
+    bottom: 2%;
+  }
 
-    .redes__sociales p a {
-        width: 1.5em;
-        height: 1.5em;
-        border-radius: 1.5em;
-        margin: 0 0.5em;
-    }
-    .footer {
-        bottom: 2%;
-      }
-      
-      .footer {
-        font-size: 0.6em;
-      }
-    
+  .footer {
+    font-size: 0.6em;
+  }
 }
 
+@media only screen and (max-width: 480px) {
+  .nav {
+    display: none;
+  }
 
-@media only screen and (max-width: 400px) {
-    .nav {
-        display: none;
-    }
+  .section {
+    background-image: url(../media/bg-imagen-400.png);
+  }
+  .section__h3 {
+    font-family: "Glow Better Serif";
+    font-size: 2em;
+  }
+  .section__h3__span {
+    font-family: "Glow Better Script";
+    font-size: 0.8em;
+    margin-left: -0.5em;
+    color: var(--color-rosa);
+  }
 
+  .inicio__h1 {
+    font-size: 2em;
+  }
+  .inicio__h1__span {
+    font-size: 0.8em;
+    margin-left: -0.5em;
+  }
+  .inicio__h2 {
+    font-size: 0.55em;
+    margin-top: -1.2em;
+  }
 
-    .section {
-        background-image: url(../media/bg-imagen-400.png);
-    }
-    .section__h3 {
-        font-family:'Glow Better Serif';
-        font-size: 2em;
-    }
-    .section__h3__span {
-        font-family: 'Glow Better Script';
-        font-size: 0.8em;
-        margin-left: -0.5em;
-        color: var(--color-rosa);
-    }
-
-    .inicio__h1 {
-        font-size: 2em;
-    }
-    .inicio__h1__span {
-        font-size: 0.8em;
-        margin-left: -0.5em;
-    }
-    .inicio__h2 {
-        font-size: 0.55em;
-        margin-top: -1.2em;
-    }
-
-   .countdown {
-        margin: 50px 0;
+  .countdown {
+    margin: 50px 0;
   }
 
   .countdown li {
@@ -513,24 +497,23 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
   }
 
+  .inicio__contenedor__icono {
+    bottom: 3%;
+    left: 46%;
+    font-size: 2em;
+  }
 
-    .inicio__contenedor__icono {
-        bottom: 3%;
-        left: 46%;
-        font-size: 2em;
-    }
+  .redes__sociales p {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font-size: 1.5em;
+  }
 
-    .redes__sociales p {
-        display: flex;
-        justify-content: center;
-        margin: 0;
-        font-size: 1.5em;
-    }
-
-    .redes__sociales p a {
-        width: 1.5em;
-        height: 1.5em;
-        border-radius: 1.5em;
-        margin: 0 0.5em;
-    }
+  .redes__sociales p a {
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 1.5em;
+    margin: 0 0.5em;
+  }
 }
