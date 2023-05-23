@@ -162,6 +162,19 @@ h6 {
   color: var(--color-gris);
 }
 
+
+/* ------------------------- */
+/* Nuestros Menus */
+/* ------------------------- */
+
+
+.hazte__socio__widget {
+  display: flex;
+  height: 500px;
+}
+
+
+
 /* ------------------------- */
 /* Nuestros Menus */
 /* ------------------------- */
