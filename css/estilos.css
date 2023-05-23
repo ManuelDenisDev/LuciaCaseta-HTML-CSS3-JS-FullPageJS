@@ -420,3 +420,78 @@ h1, h2, h3, h4, h5, h6 {
         margin: 0 0.5em;
     }
 }
+
+
+@media only screen and (max-width: 400px) {
+    .nav {
+        display: none;
+    }
+    }
+
+    .section {
+        background-image: url(../media/bg-imagen-400.png);
+    }
+    .section__h3 {
+        font-family:'Glow Better Serif';
+        font-size: 2em;
+    }
+    .section__h3__span {
+        font-family: 'Glow Better Script';
+        font-size: 0.8em;
+        margin-left: -0.5em;
+        color: var(--color-rosa);
+    }
+
+    .inicio__h1 {
+        font-size: 2em;
+    }
+    .inicio__h1__span {
+        font-size: 0.8em;
+        margin-left: -0.5em;
+    }
+    .inicio__h2 {
+        font-size: 0.55em;
+        margin-top: -1.2em;
+    }
+
+   .countdown {
+        margin: 50px 0;
+  }
+
+  .countdown li {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    margin: 0 0.5em;
+  }
+
+  .countdown span {
+    font-size: 1em;
+  }
+
+  .countdown h3 {
+    font-size: 0.4em;
+    text-transform: uppercase;
+  }
+
+
+    .inicio__contenedor__icono {
+        bottom: 3%;
+        left: 46%;
+        font-size: 2em;
+    }
+
+    .redes__sociales p {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        font-size: 1.5em;
+    }
+
+    .redes__sociales p a {
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 1.5em;
+        margin: 0 0.5em;
+    }
+}
